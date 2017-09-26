@@ -6,9 +6,16 @@
 * {
   font-size: 16px;
   font-family: 'Lato' sans-serif;
-
 }
-
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
 /*
  * menu 
  */
@@ -18,8 +25,8 @@ header {
   height: 737px;
   width: 100%;
   margin: 0;
-}
-.clearfix{
+} 
+.clearfix {
   clear: both;
 }
 header .pos-center {
@@ -109,8 +116,12 @@ header nav .menu-toggler:focus {
   font-weight: bold;
   font-family: 'chunkfiveroman', serif;
 }
-.header-content .skyblue-title {
+.header-content .skyblue-title,
+.skyblue-title {
   color: #01a2a6;
+}
+.skyblue-title {
+  font-size: 60px;
 }
 .header-content p {
   color: #fff;
@@ -132,6 +143,93 @@ header nav .menu-toggler:focus {
   margin-top: 20px;
 }
 
+/*section city of love*/
+  #city-of-love {
+    min-height: 495px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: -40px;
+  }
+  .img-city {
+    float: left;
+    margin-top: 95px;
+    height: 250px;
+  }
+  .content-city {
+    float: right;
+    margin: 55px 0 0 85px;
+    max-width: 570px;
+    padding: 20px;
+  }
+  .content-city p {
+    color: #9b9b9b;
+    line-height: 35px;
+  }
+
+/*footer*/
+footer {
+  background-image: url('../images/background-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+.link-footer,
+.social {
+  margin-top: 27px;
+}
+.link-footer li,
+.social li {
+  display: inline-block;
+  margin-right: 7px;
+}
+.link-footer {
+  float: left;
+}
+.link-footer a {
+  color: #777;
+}
+.social {
+  float: right;
+}
+
+footer .fa-circle {
+  color: #5d5c5c;
+}
+footer a {
+  color: #777;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 27px;
+}
+.icon {
+  color: #2f2933;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #777;
+  border-radius: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+.copy {
+  clear: both;
+  color: #afafaf;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 130px;
+}
+
+@media screen and (max-width: 1125px){
+  .img-city, 
+  .content-city {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .img-city {
+    padding-top: 60px;
+  }
+}
 
 
 
@@ -167,15 +265,34 @@ header nav .menu-toggler:focus {
     padding: 10px;
   }
   .header-content {
-    padding-top: 50px;
+    padding-top: 5px;
   }
   .header-content h1,
   .header-content .skyblue-title {
-    font-size: 50px;
+    font-size: 45px;
   }
   .header-content p {
     margin-top: -20px;
+    font-size: 16px;
+  }
+  .img-city {
+    max-height: 150px;
   }
 }
 
-@media screen and (max-width: 460px) {}
+
+
+
+@media screen and (max-width: 460px) {
+  .link-footer{
+    padding-top: 30px;
+  }
+  .link-footer, 
+  .social {
+    float: none;
+    text-align: center;
+  }
+  .copy {
+    padding-top: 60px;
+  }
+}
