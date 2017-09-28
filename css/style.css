@@ -62,9 +62,11 @@ header nav ul.visible {
   width: 100%;
   text-align: center;
 }
+header nav ul {
+  text-align: right;
+}
 header nav ul li {
   display: inline-block;
-  float: right;
 }
 header nav ul li a {
   font-family: 'Lato', sans-serif;
@@ -170,6 +172,134 @@ header nav .menu-toggler:focus {
   color: #9b9b9b;
   line-height: 35px;
 }
+/*section destination*/
+#destination {
+  background-color: #f2fefe;
+  height: 1450px;
+}
+.head-destination {
+  margin-left: 40px;
+}
+.head-destination h2 {
+  text-align: left;
+}
+.head-destination .info {
+  margin: -90px 0 50px 0;
+  text-align: right;
+}
+.head-destination {
+  color: #777;
+}
+.head-destination input {
+  width: 230px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 40px;
+}
+.search {
+  position: relative;
+}
+.search .fa {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.img-paraligder {
+  float: left;
+  background-image: url('../images/paraligder.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 420px;
+}
+.see-more-img {
+  text-align: right;
+  margin-right: 10px;
+}
+.see-more-img a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.img-paraligder .see-more-img {
+  margin-top: 390px;
+}
+.batu {
+  float: left;
+  height: 385px;
+  width: calc(40% - 40px);
+  margin-left: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+.description-image {
+  color: #999a9a;
+  line-height: 25px;
+}
+h6 {
+  color: #42b9bd;
+  font-size: 30px;
+  margin: 10px 0;
+}
+/*.fa-search:before {
+    content: "\f002";
+}*/
+.two-paragraph .left-description {
+  float: left;
+  width: calc(60% - 20px);
+  height: 340px;
+  margin: 20px 20px 0 0; 
+}
+.bromo {
+  width: calc(50% - 40px);
+  height: 300px;
+  background: #fff;
+  float: left;
+  padding: 20px;
+}
+.mountain-bromo {
+  background: url('../images/mountain.jpg');
+  background-position: center;
+  background-size: cover; 
+  height: 340px;
+  width: 50%;
+  float: right;
+}
+.mountain-bromo .see-more-img {
+  margin-top: 300px;
+}
+.two-paragraph .right-description {
+  float: right;
+  background: url('../images/boat.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  margin-top: 20px;
+  height: 340px;
+}
+.boat-palm-img {
+  border-radius: 50px;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pagination {
+  text-align: center;
+}
+.pagination ul li {
+  display: inline-block;
+  color: #acacac;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  margin-top: 50px;
+}
+.pagination ul li:nth-child(1) {
+  color: #01a2a6;
+  font-size: 22px;
+}
+
 /*section contact*/
 #contact {
   background-image: url('../images/contact-background.jpg');
