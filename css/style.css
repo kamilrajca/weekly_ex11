@@ -15,7 +15,9 @@
 h2 {
   color: #29d9c2;
   font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'chunkfiveroman', serif;
+  text-align: center;
+  font-weight: bold;
 }
 /*
  * menu 
@@ -145,29 +147,104 @@ header nav .menu-toggler:focus {
 }
 
 /*section city of love*/
-  #city-of-love {
-    min-height: 495px;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin-top: -40px;
-  }
-  .img-city {
-    float: left;
-    margin-top: 95px;
-    /*height: 250px;*/
-    width: calc(50% - 20px);
-  }
-  .content-city {
-    float: right;
-    margin: 55px 0 0 20px;
-    /*max-width: 570px;*/
-    /*margin-top: 55px;*/
-    width: calc(50% - 40px);
-    padding: 20px;
-  }
-  .content-city p {
-    color: #9b9b9b;
-    line-height: 35px;
-  }
+#city-of-love {
+  min-height: 495px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: -40px;
+}
+.img-city {
+  float: left;
+  margin-top: 95px;
+  /*height: 250px;*/
+  width: calc(50% - 20px);
+}
+.content-city {
+  float: right;
+  margin: 55px 0 0 20px;
+  /*max-width: 570px;*/
+  /*margin-top: 55px;*/
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+.content-city p {
+  color: #9b9b9b;
+  line-height: 35px;
+}
+/*section contact*/
+#contact {
+  background-image: url('../images/contact-background.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 666px;
+}
+#contact h2 {
+  color: #fff;
+}
+#contact .form-info {
+  float: left;
+  width: 45%;
+}
+#contact .form-info input,
+#contact .form-info textarea {
+  display: block;
+  margin: 20px;
+  width: 320px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #b9b9b9;
+  font-size: 14px;
+  padding: 20px;
+}
+#contact .form-info input:nth-child(2n),
+#contact .form-info input:nth-child(3n) {
+  width: 130px;
+  display: inline-block;
+  margin: 0;
+}
+#contact .form-info input:nth-child(2n) {
+  margin: 0 20px 0 18px;
+}
+#contact .form-info textarea {
+  width: 320px;
+  height: 95px;
+}
+.btn-contact {
+  background-color: #b5ed85;
+  color: #fff;
+  margin-left: 200px;
+}
+.contact-or {
+  color: #fff;
+  float: left;
+  margin-top: 130px;
+}
+#contact .addres {
+  float: right;
+  width: 45%;
+  color: #fff;
+}
+#contact .addres h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#contact .addres ul {
+  padding: 0;
+}
+#contact .addres ul li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+#contact .addres .map-link {
+  text-decoration: none;
+  color: #fff772;
+  margin-left: 20px;
+
+}
+
+
+
 /*section keep in touch*/
 #keep-in-touch {
   height: 215px;
@@ -194,7 +271,6 @@ header nav .menu-toggler:focus {
   padding: 20px;
   border-radius: 10px 0 0 10px;
   vertical-align: bottom;
-
 }
 .form-email button {
   height: 70px;
@@ -209,8 +285,6 @@ header nav .menu-toggler:focus {
   color: #fff;
   margin-bottom: 0;
 }
-
-
 
 /*footer*/
 footer {
@@ -265,20 +339,36 @@ footer a {
   padding-top: 130px;
 }
 
-@media screen and (max-width: 1125px){
-  .img-city, 
-  .content-city {
-    float: none;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-  }
-  .img-city {
-    padding-top: 60px;
-  }
-}
+/*@media screen and (max-width: 115px){
+
+}*/
 
 @media screen and (max-width: 970px){
+  #contact {
+    height: 1000px;
+  }
+  #contact .form-info, 
+  .contact-or, 
+  #contact .addres {
+    float: none;
+    margin: 0 auto;
+    /*width: 100%;*/
+  } 
+  .contact-or {
+    text-align: center;
+    margin: 30px 0;
+  }
+  #contact .form-info input:nth-child(2n),
+  #contact .form-info input:nth-child(3n) {
+  width: 320px;
+  display: block;
+  }
+  #contact .form-info input:nth-child(3n) {
+    margin: 20px
+  }
+  .btn-contact {
+    margin-left: 100px;
+  }
   #keep-in-touch {
     height: 335px;
   }
@@ -332,8 +422,27 @@ footer a {
     margin-top: -20px;
     font-size: 16px;
   }
+  .img-city, 
+  .content-city {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
   .img-city {
-    max-height: 150px;
+    padding-top: 60px;
+  }
+
+  #contact .form-info input,
+  #contact .form-info textarea {
+    width: 230px;
+  }
+  #contact .form-info input:nth-child(2n),
+  #contact .form-info input:nth-child(3n) {
+  max-width: 230px;
+  }
+  .form-email input {
+    width: 250px;
   }
 }
 
@@ -341,6 +450,9 @@ footer a {
 
 
 @media screen and (max-width: 460px) {
+  .form-email input {
+    width: 150px;
+  }
   .link-footer{
     padding-top: 30px;
   }
