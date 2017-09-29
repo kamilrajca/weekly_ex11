@@ -172,6 +172,107 @@ header nav .menu-toggler:focus {
   color: #9b9b9b;
   line-height: 35px;
 }
+/*section set ittinery*/
+.ittenery {
+  float: left;
+  width: 50%;
+}
+.ittenery h5 {
+  background: url('../images/background-itenery-head.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 44px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+}
+.ittenery form {
+  background: #ffffa6;
+  padding: 20px;
+}
+.ittenery form h6 {
+  font-size: 16px;
+}
+.ittenery form input {
+  width: 80%;
+  height: 60px;
+  padding-left: 70px;
+  border-radius: 5px;
+  border: 2px solid #d5d57d;
+}
+.ittenery p {
+  background-color: #f5e99e;
+  font-size: 14px;
+  padding: 8px;
+  color: #d8cb7d;
+  margin: 0 5px;
+
+}
+.ittenery p:nth-child(4),
+.ittenery p:nth-child(9) {
+  border-radius: 0 0 5px 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 0 10px 50%;
+}
+.ittenery p:last-child {
+  padding: 15px 5px;
+  text-align: center;
+  border: 3px dashed #e8e897;
+  border-radius: 5px;
+}
+.mini-foto {
+  position: absolute;
+  /*width: 40px;*/
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.buttons {
+  clear: both;
+}
+.btn-save {
+  color: #fff;
+  background-color: #c3f37f;
+}
+.btn-print {
+  color: #fff;
+  background-color: #3ddbc7;
+}
+.ittinery-list {
+  float: left;
+  width: 50%;
+}
+.ittinery-list h5 {
+  color: #29d9c2;
+  text-align: center;
+}
+.ittinery-list span {
+  color: #29d9c2;
+  font-size: 14px;
+}
+.ittinery-list ul li p {
+  margin: 10px;
+}
+.ittinery-list ul li p:nth-child(2) {
+  color: #dedede;
+  font-size: 14px;
+}
+.ittinery-list ul li {
+  list-style-type: none;
+  color: #626262;
+  position: relative;
+  border: 1px solid #626262;
+  border-radius: 5px;
+  margin: 15px;
+}
+.ittinery-list ul li img {
+  position: absolute;
+  top: 5px;
+  left: 70%;
+}
+
 /*section destination*/
 #destination {
   background-color: #f2fefe;
@@ -199,6 +300,7 @@ header nav .menu-toggler:focus {
 }
 .search {
   position: relative;
+  margin-bottom: 30px;
 }
 .search .fa {
   position: absolute;
@@ -286,6 +388,7 @@ h6 {
 }
 .pagination {
   text-align: center;
+  clear: both;
 }
 .pagination ul li {
   display: inline-block;
@@ -306,6 +409,7 @@ h6 {
   background-position: center;
   background-size: cover;
   height: 666px;
+  clear: both
 }
 #contact h2 {
   color: #fff;
