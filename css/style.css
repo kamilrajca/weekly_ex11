@@ -25,6 +25,7 @@ h2 {
 header {
   background-image: url('../images/background-header.jpg');
   background-position: center;
+  background-size: cover;
   height: 737px;
   width: 100%;
   margin: 0;
@@ -77,9 +78,7 @@ header nav ul li a {
   text-align: center;
 }
 header nav ul > li > a {
- /*   height: 80px;
-    line-height: 80px;*/
-    padding: 18px;
+  padding: 18px;
 }
 header nav ul li > a:hover {
   color: #fff;
@@ -107,7 +106,6 @@ header nav .menu-toggler:focus {
   border: 3px solid #fff;
   padding: 3px;
 }
-
 .header-content {
   clear: both;
   text-align: center;
@@ -147,8 +145,6 @@ header nav .menu-toggler:focus {
   background-color: #ffffa6;
   margin-top: 20px;
 }
-
-/*section city of love*/
 #city-of-love {
   min-height: 495px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -157,14 +153,11 @@ header nav .menu-toggler:focus {
 .img-city {
   float: left;
   margin-top: 95px;
-  /*height: 250px;*/
   width: calc(50% - 20px);
 }
 .content-city {
   float: right;
   margin: 55px 0 0 20px;
-  /*max-width: 570px;*/
-  /*margin-top: 55px;*/
   width: calc(50% - 40px);
   padding: 20px;
 }
@@ -172,10 +165,10 @@ header nav .menu-toggler:focus {
   color: #9b9b9b;
   line-height: 35px;
 }
-/*section set ittinery*/
 .ittenery {
   float: left;
   width: 50%;
+  min-height: 650px;
 }
 .ittenery h5 {
   background: url('../images/background-itenery-head.jpg');
@@ -195,7 +188,7 @@ header nav .menu-toggler:focus {
   font-size: 16px;
 }
 .ittenery form input {
-  width: 80%;
+  width: calc(100% - 70px);
   height: 60px;
   padding-left: 70px;
   border-radius: 5px;
@@ -207,7 +200,6 @@ header nav .menu-toggler:focus {
   padding: 8px;
   color: #d8cb7d;
   margin: 0 5px;
-
 }
 .ittenery p:nth-child(4),
 .ittenery p:nth-child(9) {
@@ -224,17 +216,18 @@ header nav .menu-toggler:focus {
 }
 .mini-foto {
   position: absolute;
-  /*width: 40px;*/
   height: 50px;
   margin-left: 10px;
   margin-top: 7px;
 }
 .buttons {
-  clear: both;
+  margin: 30px 0;
+  float: right;
 }
 .btn-save {
   color: #fff;
   background-color: #c3f37f;
+  margin-right: 20px;
 }
 .btn-print {
   color: #fff;
@@ -251,6 +244,9 @@ header nav .menu-toggler:focus {
 .ittinery-list span {
   color: #29d9c2;
   font-size: 14px;
+}
+.ittinery-list ul {
+  padding: 0;
 }
 .ittinery-list ul li p {
   margin: 10px;
@@ -272,11 +268,8 @@ header nav .menu-toggler:focus {
   top: 5px;
   left: 70%;
 }
-
-/*section destination*/
 #destination {
   background-color: #f2fefe;
-  height: 1450px;
 }
 .head-destination {
   margin-left: 40px;
@@ -292,7 +285,7 @@ header nav .menu-toggler:focus {
   color: #777;
 }
 .head-destination input {
-  width: 230px;
+  max-width: 230px;
   height: 30px;
   border-radius: 25px;
   border: none;
@@ -344,9 +337,6 @@ h6 {
   font-size: 30px;
   margin: 10px 0;
 }
-/*.fa-search:before {
-    content: "\f002";
-}*/
 .two-paragraph .left-description {
   float: left;
   width: calc(60% - 20px);
@@ -476,9 +466,6 @@ h6 {
   margin-left: 20px;
 
 }
-
-
-
 /*section keep in touch*/
 #keep-in-touch {
   height: 215px;
@@ -488,14 +475,12 @@ h6 {
   background-position: center;
 }
 .content-keep {
-  /*width: 50%;*/
   float: left;
 }
 .form-email {
   height: 70px;
   float: right;
   margin-top: 65px;
-  /*width: 50%;*/
 }
 .form-email input {
   height: 28px;
@@ -545,7 +530,6 @@ footer {
 .social {
   float: right;
 }
-
 footer .fa-circle {
   color: #5d5c5c;
 }
@@ -572,11 +556,7 @@ footer a {
   text-align: center;
   padding-top: 130px;
 }
-
-/*@media screen and (max-width: 115px){
-
-}*/
-
+/*media max-width 970px*/
 @media screen and (max-width: 970px){
   #contact {
     height: 1000px;
@@ -585,9 +565,12 @@ footer a {
   .contact-or, 
   #contact .addres {
     float: none;
-    margin: 0 auto;
-    /*width: 100%;*/
+    text-align: center;
+    width: 100%;
   } 
+  #contact .addres .map-link {
+    display: block;
+  }
   .contact-or {
     text-align: center;
     margin: 30px 0;
@@ -596,12 +579,14 @@ footer a {
   #contact .form-info input:nth-child(3n) {
   width: 320px;
   display: block;
+  margin: 20px auto;
   }
-  #contact .form-info input:nth-child(3n) {
-    margin: 20px
+  #contact .form-info input,
+  #contact .form-info textarea {
+    margin: 20px auto;
   }
   .btn-contact {
-    margin-left: 100px;
+    margin-left: 0;
   }
   #keep-in-touch {
     height: 335px;
@@ -613,7 +598,6 @@ footer a {
     text-align: center;
   }
 }
-
 /*media max width 768px*/
 @media screen and (max-width: 768px){
   header {
@@ -662,30 +646,84 @@ footer a {
     text-align: center;
     margin: 0 auto;
     display: block;
+    width: 80%;
   }
   .img-city {
     padding-top: 60px;
   }
-
+  .description-image {
+    line-height: 18px;
+    font-size: 14px;
+  }
+  h2,
+  .skyblue-title {
+    font-size: 50px;
+  }
+  h6 {
+    font-size: 22px;
+  }
+  .img-paraligder,
+  .mountain-bromo {
+    display: none;
+  }
+  .head-destination {
+    margin-left: 0;
+  }
+  .ittinery-list h5 {
+    padding-top: 40px;
+  }
+  .batu,
+  .bromo, 
+  .two-paragraph .left-description {
+    float: none;
+    width: calc(100% - 20px);
+    height: auto;
+  }
+  .batu {
+    width: calc(100% - 40px);
+  }
+  .two-paragraph .right-description,
+  .ittenery,
+  .ittinery-list  {
+    float: none;
+    width: 100%;
+  }
+  .btn-save,
+  .btn-print {
+    margin: 20px auto;
+  }
   #contact .form-info input,
   #contact .form-info textarea {
     width: 230px;
   }
   #contact .form-info input:nth-child(2n),
   #contact .form-info input:nth-child(3n) {
-  max-width: 230px;
+    max-width: 230px;
   }
   .form-email input {
     width: 250px;
   }
 }
-
-
-
-
+/* media max-width 460px*/
 @media screen and (max-width: 460px) {
+  * {
+    font-size: 14px;
+  }
+    h2,
+  .skyblue-title {
+    font-size: 40px;
+  }
+  .content-city p {
+    line-height: 20px;
+  }
   .form-email input {
-    width: 150px;
+    width: 100px;
+  }
+  .ittinery-list span {
+    display: none;
+  }
+  .ittinery-list ul li img {
+    left: 60%;
   }
   .link-footer{
     padding-top: 30px;
