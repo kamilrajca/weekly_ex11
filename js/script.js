@@ -1,5 +1,5 @@
 // płynne przewijanie menu
-     $('a').click(
+     $('.menu-link').click(
     function(event){
         event.preventDefault();
         $('html, body').animate({
