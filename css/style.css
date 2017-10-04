@@ -498,7 +498,7 @@ h6 {
 }
 .content-keep h2 {
   color: #fff;
-  margin-bottom: 0;
+  margin: 31px 0 0 0;
 }
 
 /*footer*/
@@ -507,6 +507,9 @@ footer {
   background-size: cover;
   background-position: center;
   height: 250px;
+}
+footer .wrapper {
+  padding-bottom: 0;
 }
 .link-footer,
 .social {
@@ -550,7 +553,7 @@ footer a {
   color: #afafaf;
   font-size: 12px;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 120px;
 }
 /*media max-width 970px*/
 @media screen and (max-width: 970px){
